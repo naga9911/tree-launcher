@@ -5,8 +5,8 @@ buildscript {
     }
 }
 
-val composeUiVersion: String by extra
-val kotlinVersion: String by extra
+val composeUiVersion = extra["composeUiVersion"] as String
+val kotlinVersion = extra["kotlinVersion"] as String
 
 plugins {
     id("com.android.application") version "8.1.2" apply false
